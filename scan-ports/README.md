@@ -79,7 +79,7 @@ When scanning systems compliant with this RFC text, any packet not containing SY
 - FIN scan: Sets just the TCP FIN bit.
 
 - Xmas scan: Sets the FIN, PSH, and URG flags.
-- 
+
 
 | Probe Response | Assigned State  |
 |:---:|:---------------:|
