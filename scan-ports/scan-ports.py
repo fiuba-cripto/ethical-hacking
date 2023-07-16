@@ -121,7 +121,7 @@ def common_scan_analysis(scan_func, response, target_ip, port, max_retries, retr
 
 def tcp_null_scan(target_ip, port, max_retries, retransmission=False):
     ip = IP(dst=target_ip)
-    tcp = TCP(sport=RandShort(), dport=port)
+    tcp = TCP(sport=RandShort(), dport=port, flags="")
     # send SYN package and wait for response
     response = sr1(ip / tcp, timeout=3, verbose=0)
 
